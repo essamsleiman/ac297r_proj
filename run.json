@@ -1,0 +1,49 @@
+[
+  {
+    "static_dataframe_path": "../local_path"
+  },
+  {
+    "variable_ranges_path": "resources"
+  },
+  {
+    "resource_path": "resources"
+  },
+  {
+    "select_patient_cohort": {
+      "min_age": ...,
+      "max_age": ...,
+      "min_duration": ...,
+      "max_duration": null,
+      "hosq_seq": null,
+      "icustay_seq": null,
+      "mort_hosp": null,
+      "mort_icu": null,
+      "readmission_30": null
+    },
+
+    "dynamic_features": [
+      {
+        "features": [
+          "creatinine",
+          "fraction_inspired_oxygen",
+          "lactate",
+          "urine_output",
+          "alanine_aminotransferase",
+          "asparate_aminotransferase",
+          "diastolic_blood_pressure",
+          "systolic_blood_pressure",
+          "mean_blood_pressure(arterial)",
+          "partial_pressure_of_oxygen",
+          "gcs"
+        ],
+        "data_path": "../local_path",
+        "variable_ranges": null,
+        "exclusion_method": ...,
+        "alternative_method": ...,
+        "low_quantile": 0.01,
+        "high_quantile": 0.99,
+        "median_abs_devs": 5
+      }
+    ]
+  }
+]
